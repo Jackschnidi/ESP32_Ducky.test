@@ -13,3 +13,7 @@ Die Webseite filtert nach der Service-UUID und zeigt im Browser-Dialog nur ESP32
 ## GitHub Pages
 `index.html`, `style.css`, `app.js` (und README) in den Root-Ordner des Repos hochladen.
 Settings → Pages → Deploy from a branch → `main` → `/(root)`. Web Bluetooth braucht HTTPS und Chrome.
+
+## Schweizer Tastatur
+Der Sketch sendet Text für ein Windows-System mit Layout „Deutsch (Schweiz)“ (QWERTZ), inkl. ä ö ü é è à ç € § ° @ # \ | ~ ^ ` { } [ ].
+Bei DOWN/UP-Befehlen sind Y und Z vertauscht, damit z. B. CTRL+Z auf der Taste „Z“ des Schweizer Layouts landet. Zusätzlich gibt es `ALTGR`.
