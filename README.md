@@ -2,7 +2,7 @@
 
 Oberfläche und Tastenliste für Tastenkombinationen stammen aus der GitHub-Pages-Version
 (CTRL/ALT/SHIFT/WIN als Checkboxen, Tasten A–Z, 0–9, ENTER, TAB, SPACE, BACK, ESC, Pfeile, F1–F12).
-Zusätzlich enthalten: Touchpad, Maus-Klicks, Scrollen, „Tasten freigeben“ (RESET), Leeren, mehrzeiliger Text.
+Zusätzlich enthalten: Touchpad, Maus-Klicks, Scrollen, mehrzeiliger Text.
 
 Die Datei `DuckyKeyboardESP_Touchpad.ino` ist unverändert.
 

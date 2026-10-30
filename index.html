@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <title>DuckyKeyboardESP</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <main class="app">
@@ -39,10 +39,6 @@
         <button id="textBtn" class="outline-button">Text</button>
       </div>
       <button id="comboBtn" class="outline-button wide">Tastenkombination einfügen</button>
-      <div class="two-buttons">
-        <button id="clearBtn" class="outline-button">Leeren</button>
-        <button id="resetBtn" class="outline-button">Tasten freigeben</button>
-      </div>
       <button id="sendBtn" class="send-button" disabled>SCRIPT SENDEN</button>
       <div id="progressWrap" class="progress-wrap" hidden>
         <div class="progress-track"><div id="progressBar"></div></div>
@@ -50,7 +46,7 @@
       </div>
       <p id="message" class="message" role="status" aria-live="polite"></p>
     </section>
-    <footer>ESP32-S3 Keyboard · BLE · Web v3</footer>
+    <footer>ESP32-S3 Keyboard · BLE · Web v4</footer>
   </main>
 
   <dialog id="textDialog">
@@ -100,6 +96,6 @@
     </form>
   </dialog>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

@@ -182,19 +182,6 @@
     }
   }
 
-  async function sendReset() {
-    if (!characteristic) {
-      showMessage("Verbinde zuerst den ESP32.", "error");
-      return;
-    }
-    try {
-      await writePayload("RESET\n");
-      showMessage("RESET gesendet: Alle Tasten werden freigegeben.", "success");
-    } catch (error) {
-      showMessage("RESET konnte nicht gesendet werden: " + (error?.message || error), "error");
-    }
-  }
-
   /* ---------------- Touchpad / Maus ---------------- */
 
   let mouseQueue = Promise.resolve();
@@ -266,8 +253,6 @@
     updatePreview();
     openDialog("comboDialog");
   });
-  $("clearBtn").addEventListener("click", () => { scriptEl.value = ""; scriptEl.focus(); });
-  $("resetBtn").addEventListener("click", sendReset);
   connectBtn.addEventListener("click", connect);
   disconnectBtn.addEventListener("click", disconnect);
   sendBtn.addEventListener("click", sendScript);
