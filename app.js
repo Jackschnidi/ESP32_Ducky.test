@@ -82,9 +82,10 @@
       connectBtn.disabled = true;
       setStatus("ESP32 wird gesucht...");
       showMessage("Wähle im Bluetooth-Dialog deinen ESP32 aus.");
-      // acceptAllDevices: der Bluetooth-Name ist im Sketch frei änderbar (BLE_DEVICE_NAME)
+      // Filter über die Service-UUID: zeigt nur ESP32-Geräte mit diesem Sketch,
+      // egal wie der Bluetooth-Name (BLE_DEVICE_NAME) lautet.
       device = await navigator.bluetooth.requestDevice({
-        acceptAllDevices: true,
+        filters: [{ services: [SERVICE_UUID] }],
         optionalServices: [SERVICE_UUID]
       });
       device.addEventListener("gattserverdisconnected", onDisconnected);

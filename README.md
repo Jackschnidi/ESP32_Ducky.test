@@ -8,7 +8,7 @@ Die Datei `DuckyKeyboardESP_Touchpad.ino` ist unverändert.
 
 ## Bluetooth-Name
 Im Sketch oben ändern: `#define BLE_DEVICE_NAME "ESP32-S3 Keyboard"`.
-Die Webseite zeigt im Browser-Dialog alle Geräte; nach dem Verbinden steht der Gerätename im Status.
+Die Webseite filtert nach der Service-UUID und zeigt im Browser-Dialog nur ESP32-Geräte mit diesem Sketch (egal welcher Name); nach dem Verbinden steht der Gerätename im Status.
 
 ## GitHub Pages
 `index.html`, `style.css`, `app.js` (und README) in den Root-Ordner des Repos hochladen.
